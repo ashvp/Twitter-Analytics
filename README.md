@@ -26,7 +26,6 @@ This Power BI dashboard enables Twitter account owners, marketers, and analysts 
 - **Real-time Metrics**: View real-time statistics of followers, tweets, retweets, and likes.
 - **Sentiment Analysis**: Understand the sentiment of tweets (positive, negative, or neutral).
 - **Top Hashtags**: Track and visualize the most frequently used hashtags.
-- **Geolocation Insights**: Get insights into the geographical distribution of tweets.
 - **Engagement Rates**: View engagement rates over time for specific tweets or campaigns.
 - **Trend Analysis**: Identify trending topics, tweets, and hashtags over time.
 
@@ -37,15 +36,13 @@ This Power BI dashboard enables Twitter account owners, marketers, and analysts 
 Before using this dashboard, ensure you have the following:
 
 - **Power BI Desktop** installed ([Microsoft website](https://powerbi.microsoft.com/desktop/)).
-- **Twitter Developer API Key** to connect to Twitter's API and retrieve data.
-  - Create a [Twitter Developer account](https://developer.twitter.com/en/apps) and generate API keys.
 - **Basic knowledge of Power BI** for customizations and troubleshooting.
 
 ---
 
 ## Data Sources
 
-The dashboard uses data pulled directly from Twitter via the Twitter API, including:
+The dashboard uses data pulled directly from Twitter DataWorld, including:
 
 - **User Data**: Information about the Twitter account's followers and user engagement.
 - **Tweets Data**: Data about individual tweets, including likes, retweets, and mentions.
@@ -61,12 +58,7 @@ To set up the dashboard:
 2. Open the **Power BI Desktop** file (`TwitterDashboard.pbix`).
 3. **Configure the Data Source**:
    - Navigate to **Data Source Settings** in Power BI.
-   - Provide your **Twitter API credentials** (API Key, Access Token) in the connection setup.
    - Test the connection to ensure data is being pulled correctly.
-4. **Update API Parameters**:
-   - In Power BI queries, update parameters for API requests (e.g., specific user handles or date ranges).
-5. **Refresh the Data**:
-   - Press the "Refresh" button to pull the latest data from Twitter.
 
 ---
 
@@ -91,19 +83,3 @@ This Power BI dashboard includes the following key data tables:
 - **Sentiment Scores**: Sentiment analysis results for each tweet.
 
 ---
-
-## Contributing
-
-We welcome contributions to improve this dashboard! To contribute:
-
-1. Fork this repository.
-2. Create a new branch for your feature or bug fix.
-3. Submit a pull request with a description of your changes.
-
-Please ensure that you follow best practices for Power BI reports, including well-documented DAX formulas and clean, readable visualizations.
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
